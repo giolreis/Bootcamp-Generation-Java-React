@@ -1,2 +1,3 @@
-package conta.util;public class Cores {
-}
+package conta.util;
+
+public class Cores {}
