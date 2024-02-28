@@ -1,7 +1,6 @@
 package conta.model;
 
-public class Conta {
-
+public abstract class Conta {
     private int agencia;
     private String titular;
     private float saldo;
@@ -36,11 +35,8 @@ public class Conta {
         this.saldo = saldo;
     }
 
-    public float sacar(float saque){
-        return saldo -= saque;
-    }
+    public abstract float sacar(float saque);
 
-    public float depositar(float deposito){
-        return saldo += deposito;
-    }
+    public abstract float depositar(float deposito);
 }
+
